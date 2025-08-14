@@ -7,7 +7,7 @@ body {
     min-height: 100vh;
 }
 
-div.title{
+div.title {
     background-color: rgba(255, 255, 255, 0.568);
     width: 800px;
     margin-left: auto;
@@ -22,7 +22,7 @@ h1 {
     color: #ff4757;
     font-family: 'Segoe UI', sans-serif;
     font-weight: 600;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .scale {
@@ -94,4 +94,33 @@ button:hover {
     background-color: #ff6b81;
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(255, 71, 87, 0.5);
+}
+
+@media (max-width: 600px) {
+    div.title {
+        width: 345px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 50px;
+        border-radius: 20px;
+        padding-top: 1px;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        padding: 15px;
+    }
+
+    .scale {
+        width: 250px;
+    }
+
+    button {
+        padding: 15px 20px;
+        font-size: 0.9em;
+    }
+
+    .slider-value {
+        font-size: 10px;
+    }
 }
