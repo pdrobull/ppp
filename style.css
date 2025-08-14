@@ -101,7 +101,7 @@ button:hover {
         width: 345px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 50px;
+        margin-top: 0px;
         border-radius: 20px;
         padding-top: 1px;
         padding-bottom: 20px;
@@ -123,4 +123,5 @@ button:hover {
     .slider-value {
         font-size: 10px;
     }
+
 }
