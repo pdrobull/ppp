@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fica ou Não Fica?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Pega, Pensa ou Passa?</h1>
+        <div class="scale">
+            <label for="rosto">Rosto:</label>
+            <div class="slider-container">
+                <input type="range" id="rosto" min="0" max="10" step="1" class="slider">
+                <div class="slider-value" id="rosto-value"></div>
+            </div>
+            <div class="scale-description">
+                avalie o rosto da pessoa que você está pensando em ficar
+            </div>
+        </div>
+        <div class="scale">
+            <label for="corpo">Corpo:</label>
+            <div class="slider-container">
+                <input type="range" id="corpo" min="0" max="10" step="1" class="slider">
+                <div class="slider-value" id="corpo-value"></div>
+            </div>
+            <div class="scale-description">
+                avalie o corpo da pessoa que você está pensando em ficar
+            </div>
+        </div>
+        <div class="scale">
+            <label for="personalidade">Personalidade:</label>
+            <div class="slider-container">
+                <input type="range" id="personalidade" min="0" max="10" step="1" class="slider">
+                <div class="slider-value" id="personalidade-value"></div>
+            </div>
+            <div class="scale-description">
+                avalie a personalidade da pessoa que você está pensando em ficar
+            </div>
+        </div>
+        <button onclick="calcularMedia()">Avaliar</button>
+        <div class="result" id="resultado"></div>
+    </div>
+</body>
+
+</html>
