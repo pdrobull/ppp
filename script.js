@@ -20,8 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 'personalidade': {
                     0: 'Insuportável', 1: 'Enjoado/a', 2: 'Chato/a', 3: 'Nada demais',
-                    4: 'OK', 5: 'Legal', 6: 'Gente boa', 7: 'Muito simpático/a',
-                    8: 'Atraente', 9: 'Muito atraente', 10: 'Perfeito/a'
+                    4: 'OK', 5: 'Legal', 6: 'Gente boa', 7: 'Simpático/a',
+                    8: 'Muito simpático/a', 9: 'Atraente', 10: 'Perfeito/a'
                 }
             };
             valueDisplay.textContent = labels[this.id][this.value];
@@ -59,8 +59,9 @@ function calcularMedia() {
     } if (media >= 4.5 & media <= 5.5) {
         mensagem = "Pensa! Você ainda precisa conhecer mais essa pessoa.";
     } if (media > 5.5) {
-        mensagem = "Pega! Tá esperanado o que ainda?";
+        mensagem = "Pega! Tá esperando o que ainda?";
     }
 
     document.getElementById('resultado').innerText = `${mensagem}`;
+
 }
